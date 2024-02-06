@@ -22,6 +22,7 @@ function randomNumber() {
         if (listOfNumbers.length === 10) {
             console.log('Max quantity of numbers reached, please refresh');
             textElement('p', 'Max quantity of numbers reached, please refresh');
+            document.querySelector('#newOne').setAttribute('disabled', 'true');
             return;
         }
         return;
