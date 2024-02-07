@@ -47,6 +47,7 @@ function userNumber() {
     return counter++;
 }
 
+//This function clears the input field
 function clearBox(){
     document.querySelector('#userNumber').value = '';
 }
@@ -56,15 +57,17 @@ function initialConditions(){
     //This is used to change the h1
     textElement('h1', 'Welcome!');
     //This is used to change the p 
-    textElement('p', 'Provide a number between 1 and 10');
+    textElement('p', 'Lets play, provide a number between 1 and 10');
     randomNumber();
     if (listOfNumbers.length === 10) {
         return listOfNumbers = [];
     } else {
-        console.log('The secret number is: ' + secretNumber);
+        //console.log('The secret number is: ' + secretNumber);
+        return;
     }
 }
 
+//This function restarts the game
 function restartGame(){
     //This function clears the box
     clearBox();
